@@ -1,0 +1,9 @@
+html {
+  overflow-x: hidden;
+  height: 100%; /* makes sure our HTML takes up 100% of the browser window */
+}
+
+body {
+  color:#222;
+  font-family: "Montserrat", sans-serif;  
+ }
