@@ -7,3 +7,135 @@ body {
   color:#222;
   font-family: "Montserrat", sans-serif;  
  }
+
+
+
+.btn-yellow, .btn-black, .btn-dash {
+	margin: .25rem auto;
+	padding:1rem 2.5rem 1rem 1rem;
+	border-radius: 4px;
+	background: #FFD600;
+	font-size: 1.25rem;
+	font-weight: 600;
+	color:#222;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.btn-black{
+	color: #FFD600;
+	background: #222;
+}
+
+.btn-dash {
+	color: #4285F4;
+	background: #fff;
+	border-style: dashed;
+	border-color: #4285F4;
+}
+
+.btn-yellow:hover, .btn-black:hover, .btn-dash:hover{
+   background-image:linear-gradient(
+      to right, 
+      #E7484F,
+      #E7484F 16.65%,
+      #F68B1D 16.65%,
+      #F68B1D 33.3%,
+      #FCED00 33.3%,
+      #FCED00 49.95%,
+      #009E4F 49.95%,
+      #009E4F 66.6%,
+      #00AAC3 66.6%,
+      #00AAC3 83.25%,
+      #732982 83.25%,
+      #732982 100%,
+      #E7484F 100%  
+    );
+  animation:slidebg 1s linear infinite alternate;
+  color: #222;
+}
+
+
+
+
+@keyframes slidebg {
+  to {
+    background-position:30vw;
+  }
+}
+
+ul{
+	margin:2rem;
+}
+ul li {
+	padding: 1.5rem;
+	list-style-type: none;
+}
+
+
+svg{
+	padding-left: 2rem;
+}
+
+
+ .contactform label{
+ 	display: block;
+ 	margin:1rem 0
+ }
+
+ .contactform input, textarea{
+  border: 0;
+  border-bottom: solid 2px #FFD600;
+  background: transparent;
+  color: #222;
+  text-align: left;
+  margin:1rem 0;
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 500;
+  width:50vw;
+ }
+
+ .contactform textarea{
+ 	height:8rem;
+ }
+
+ .contactform button{
+ 	border: 0;
+ }
+
+div.quote{
+	position: relative;
+	display: grid;
+}
+.quote blockquote{
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+} 
+
+.quote blockquote:nth-of-type(1), blockquote:nth-of-type(2), blockquote:nth-of-type(3), blockquote:nth-of-type(4){
+animation-name: fade;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+animation-duration: 25s;
+}
+
+.quote blockquote:nth-of-type(2){  
+  animation-delay: 6.25s;
+}
+
+.quote blockquote:nth-of-type(3){
+  animation-delay: 12.5s;
+}
+.quote blockquote:nth-of-type(4){
+  animation-delay: 18.75s;
+}
+
+@keyframes fade{
+    0%, 25%,100%{
+      opacity: 0;
+}
+    17%{
+      opacity: 1;
+  }
+}
