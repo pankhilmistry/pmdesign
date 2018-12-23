@@ -528,6 +528,11 @@ a.btn-circle span:hover::before {
 	padding: 1rem 2rem 0;
 }
 
+img.project-logos{
+	height: 2.5rem;
+	width: auto;
+}
+
 div.leftsideproject img, div.rightsideproject img{
 	margin: 0;
 	padding: 1rem 2rem 0;
