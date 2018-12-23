@@ -5,7 +5,7 @@ $('[data-fancybox="APA-gallery"]').fancybox({
     'slideShow',
     'zoom',
     'fullScreen',
-    'close'
+    'close',
     'thumbs'
   ],
   thumbs : {
