@@ -3,7 +3,7 @@ html {
   height: 100%; /* makes sure our HTML takes up 100% of the browser window */
 }
 
-body {
+body.portfolio {
   color:#222;
   font-family: "Montserrat", sans-serif;  
  }
@@ -104,6 +104,11 @@ ul li {
 
 a.site-logo{
 	padding: .5rem 0;
+}
+
+a.site-logo img{
+	height: 7rem;
+	width: auto;
 }
 
 header nav , header.heroyellow nav{
