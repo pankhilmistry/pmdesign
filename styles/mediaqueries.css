@@ -1,18 +1,18 @@
 /*-----------------------Media Queries----------------------------------*/
 
-/*@media (min-width: 48em) {
-  .header li {
+/*@media (min-width: 640px) {
+  header li {
     float: left;
   }
-  .header li a {
+  header li a {
     padding: 20px 30px;
   }
-  .header .menu {
+  header .menu {
     clear: none;
     float: right;
     max-height: none;
   }
-  .header .menu-icon {
+  header .menu-icon {
     display: none;
   }
 }*/
@@ -23,6 +23,23 @@
 
 @media screen and (max-width: 640px){
 
+header nav, header.heroyellow nav{
+  padding: 1rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ header nav ul, header.heroyellow nav ul{
+  margin: 0;
+  padding:0.5rem 0 0;
+ }
+
+ header nav ul li a, header.heroyellow nav ul li a{
+  margin: 0;
+  padding:0;
+}
 
  #hero, #hero-mywork, #hero-aboutme {
   width: 100vw;
@@ -42,7 +59,7 @@
 #hero h1, #hero-mywork h1, #hero-mywork h2, #hero-aboutme h1, #hero-aboutme h2{
   font-size: 1.5rem;
   width: 85vw;
-  margin: 2rem 0 0;
+  margin: 1rem 0 0;
   padding: 1rem 1.25rem 1rem;
 }
 

@@ -11,13 +11,13 @@ body.portfolio {
 
 /*---------------------------Hamburger Icon Animation------------------------*/
 
-/*.header .menu {
+/*header .menu {
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-in-out;
 }
 
-.header .menu-icon {
+header .menu-icon {
   cursor: pointer;
   display: inline-block;
   float: right;
@@ -26,7 +26,7 @@ body.portfolio {
   user-select: none;
 }
 
-.header .menu-icon .navicon {
+header .menu-icon .navicon {
   background: #333;
   display: block;
   height: 2px;
@@ -35,8 +35,8 @@ body.portfolio {
   width: 1.5rem;
 }
 
-.header .menu-icon .navicon:before,
-.header .menu-icon .navicon:after {
+header .menu-icon .navicon:before,
+header .menu-icon .navicon:after {
   background: #333;
   content: '';
   display: block;
@@ -46,48 +46,48 @@ body.portfolio {
   width: 100%;
 }
 
-.header .menu-icon .navicon:before {
+header .menu-icon .navicon:before {
   top: .5rem;
   width:50%;
 }
 
-.header .menu-icon .navicon:after {
+header .menu-icon .navicon:after {
   top: -.5rem;
   width:50%;
   margin-left:50%;
-}*/
+}
 
 /* menu btn */
 
-/*.header .menu-btn {
+/*header .menu-btn {
   display: none;
 }
 
-.header .menu-btn:checked ~ .menu {
+header .menu-btn:checked ~ .menu {
   max-height: 100%;
 }
 
- .header .menu-btn:checked ~ .menu-icon .navicon {
+ header .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
 } 
 
-.header .menu-btn:checked ~ .menu-icon .navicon:before {
+header .menu-btn:checked ~ .menu-icon .navicon:before {
   transform: translateY(-1rem);
   opacity:0;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon:after {
+header .menu-btn:checked ~ .menu-icon .navicon:after {
   transform: translateY(1rem);
   opacity:0;
 }
 
- .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 10px;
 } 
-
-
 */
+
+
 
 
 /*---------------------------Header------------------------*/
@@ -381,10 +381,15 @@ p.instax-text{
   #732982 100%,
   #E7484F 100%  
     );
-  animation:slidebg 1s linear infinite alternate;
+  animation:slidebgdwn 1s linear infinite alternate;
   color: #222;
 }
 
+@keyframes slidebgdwn {
+  to {
+    background-position-y:30vw;
+  }
+}
 
 /*a.btn-circle {
 	padding: 2rem 0 4rem;
@@ -395,9 +400,9 @@ p.instax-text{
 	margin: 10px auto;
 	position: relative;
 	grid-column: 1 / -1;
-}*/
+}
 
-/*a.btn-circle span {
+a.btn-circle span {
 	position: absolute;
 	width: 46px;
 	height: 46px;
@@ -463,8 +468,8 @@ a.btn-circle span:hover::before {
 	100% {
 		opacity: 0;
 	}
-}*/
-
+}
+*/
 
 /*---------------------------UXUI, Industrial Design------------------------*/
 
@@ -541,7 +546,7 @@ div.leftsideproject img, div.rightsideproject img{
  #leftsideproject p, #rightsideproject p{
 	margin:0;
 	padding: 1rem 2rem 0;
-	line-height: 120%;
+	line-height: 150%;
 }
 
  #leftsideproject sup{
@@ -810,7 +815,7 @@ form {
   text-align: left;
   margin: 1rem 0;
   font-size: 1.5rem;
-  line-height: 120%;
+  line-height: 150%;
   font-weight: 600;
   width:54vw;
 }
