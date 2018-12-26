@@ -350,7 +350,6 @@ p.instax-text{
 	width: 1.25rem;
 	font-size: 1.75rem;
 	border-radius: 100%;
-	color: #FFD600;
 	text-decoration: none;
 	cursor: pointer;
 	margin: 1rem auto 2rem;
@@ -362,6 +361,10 @@ p.instax-text{
 	flex-wrap: nowrap;
 	justify-content: space-around;
 	align-items: center;
+}
+
+.btn-circle svg{
+	fill: #FFD600;
 }
 
 .btn-circle:hover{
@@ -382,7 +385,10 @@ p.instax-text{
   #E7484F 100%  
     );
   animation:slidebgdwn 1s linear infinite;
-  color: #222;
+}
+
+.btn-circle:hover svg{
+	fill: #222;
 }
 
 @keyframes slidebgdwn {
