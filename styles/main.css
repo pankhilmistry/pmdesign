@@ -774,17 +774,21 @@ p.journey-text:nth-of-type(5){
 	padding: 0;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 ul.socialmedia li a{
-  font-size: 1.5rem;
   display: inline-block;
   margin:0;
   padding: 0 1rem;
  }
 
-ul.socialmedia li a:hover{
-  color: #FFD600;
+ ul.socialmedia li a svg{
+ 	fill: #222;
+ }
+
+ul.socialmedia li a:hover svg{
+  fill: #FFD600;
  }
 
  #lastsection h4 {

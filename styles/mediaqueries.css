@@ -279,10 +279,10 @@ p.journey-text {
 #lastsection ul.socialmedia li{
   padding: 0;
   justify-content: flex-start;
+  align-items: center;
 }
 
 ul.socialmedia li a{
-  font-size: 1.75rem;
   padding: 0 2rem 0 0;
  }
 
