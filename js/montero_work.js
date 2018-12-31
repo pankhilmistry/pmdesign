@@ -1,6 +1,6 @@
 
 
-$('[data-fancybox="APA-gallery"]').fancybox({
+$('[data-fancybox="Persona-gallery"]').fancybox({
   buttons : [ 
     'slideShow',
     'zoom',
