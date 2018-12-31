@@ -1,0 +1,938 @@
+html {
+	overflow-x: hidden;
+	height: 100%; /* makes sure our HTML takes up 100% of the browser window */
+  font-size: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+section.cheddr-cs{
+  background: -webkit-linear-gradient(0deg, rgba(242, 242, 242, 1), rgba(255, 255, 255, 1));
+  margin: 0;
+  padding: 0;
+}
+
+header , footer {
+  font-family: "Montserrat", sans-serif;  
+}
+
+main.cheddr-cs {
+  color:#333333;
+  min-height: 100%;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 3rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; 
+ }
+
+ .container:before, .container:after {
+  content: " ";
+  display: table;
+ }
+
+ .container:after {
+  clear: both;
+ }
+
+/*-----------------------Cheddr-Hero----------------------------------*/
+  
+.cheddr-hero{
+  padding-top: 20px;
+  padding-bottom: 20px; 
+  text-align: center;
+ }
+
+.landing{
+  margin: 0 auto;
+  width: calc(100vw - 30px);
+  height: calc(100vw - 30px);
+  background: url(../images/CheddrCS/hero.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+ }
+
+.hero-content{
+  top: 43%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+ 
+.intro img{
+  display: none;
+ }
+
+
+.intro h1, .intro h2{
+  margin: 5px auto;
+  padding: 5px 0;
+  font-size: 4rem;                
+  font-weight: 700;               
+ }
+
+.intro h2{
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.4);
+}
+
+.intro h3{
+  max-width: 500px;
+  margin: 5px auto;
+  padding: 5px 0;            
+  font-size: 1.2rem;                
+  font-weight: 400;              
+ }
+
+
+/*-----------------------Description----------------------------------*/
+
+
+.description {
+  display:flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+ 
+ .description ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: .5rem;
+  align-items: flex-end;
+ }
+ .description ul li {
+  list-style-type: none;
+  min-width: 8rem;
+  margin: 1rem auto;
+  padding: .25rem .5rem;
+ }
+ .description svg {
+  margin:0;
+  padding: .25rem;
+ }
+ .description h4, .description p{
+  margin: .25rem auto;
+  padding: .25rem;
+  font-size: 20px;
+  font-weight: 700;
+ }
+
+ .description p {
+  font-weight: 400;
+ }
+
+a.btn{
+  margin: 0 auto;
+  padding:10px 35px;
+  border:2px solid #333;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+  text-decoration: none;
+ }
+ 
+ a.btn:hover{
+  background:#ffc900;
+  border: 2px solid #ffc900;
+ }
+
+
+/*-----------------------Common Styles----------------------------------*/
+
+.summary, .challenge, .solution, .design-process, .conclusion{
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.design-process ul, .design-process ul li{
+  margin: 0;
+  padding: 0.5rem 0;
+  line-height: 150%;
+  list-style-type: disc;
+}
+
+.design-process ul li:nth-of-type(1){
+  list-style-type: none;
+}
+
+.summary{
+  margin-top: 8rem;
+}
+
+.section-headings, .design-stage-headings {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.section-headings h1, .design-stage-headings h2, h3.design-stage-captions{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffc900;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.design-stage-headings h2{
+  font-size: 1.75rem;
+  color: #222;
+}
+
+h3.design-stage-captions{
+  font-size: 1.25rem;
+  color: #222;
+}
+
+p.section-content {
+  margin: 0;
+  padding: 1rem 0;
+  line-height: 150%;
+}
+
+.wrapper{
+  width: 60vw;
+  margin: 2rem auto;
+  padding: 3rem;
+  border-radius: 0.5rem;
+}
+
+/*-----------------------Specsheet----------------------------------*/
+
+.specsheet{
+  background: #e0e0e0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr auto;
+  color: #222;
+}
+
+.specsheet-content, .surveys-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  grid-row-start: 2;
+}
+
+.specsheet h2, .surveys-content h2{
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  padding:0.5rem 2rem 1rem;
+  grid-column: 1 / 2;
+}
+
+.specsheet h2:nth-of-type(2){
+  grid-row-start: 1;
+  grid-column: 2 / 3;
+}
+
+.specsheet-content ul, .personas ul, .ca ul{
+  margin: 0;
+  padding: 0.5rem 2rem;
+  line-height: 150%;
+}
+
+.specsheet-content ul li,.personas ul li, .ca ul li{
+  margin: 0;
+  padding: 0.5rem 0;
+}
+.specsheet-content:nth-of-type(1) {
+  border-right: 1px solid #222;
+}
+
+/*-----------------------Surveys----------------------------------*/
+
+.surveys{
+  background: #ffc900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.surveys-content, .viewall{
+  width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.surveys-content h2{
+  color: #fff;
+}
+
+.surveys-content h3, .surveys-content p, .personas h2, .personas h3{
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+.surveys-content p{
+  padding: .5rem 0;
+  font-size: 1rem;
+}
+
+.surveys-content ul{
+  margin: 0;
+  padding: 0.5rem 2rem;
+  width: 30%;
+}
+
+.surveys-content ul:nth-of-type(1){
+  margin: 0 auto;
+  width: 100%;
+}
+
+.surveys-content ul li{
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.surveys-content ul li p.highlight{
+  border-bottom: 0.25rem solid #fff;
+}
+
+.viewall{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+}
+
+.surveys .viewall a.btn:hover{
+  background:#fff;
+  border: 2px solid #fff;
+}
+
+/*-----------------------Personas----------------------------------*/
+
+.personas {
+  margin: 2rem 0;
+  padding: 5rem 0;
+  background-image: url(../images/CheddrCS/personas_bg.png);
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.personas-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.personas-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.personas .viewall a.btn, .ca a.btn{
+  color: #fff;
+  border: 2px solid #fff;
+}
+.personas .viewall a.btn:hover, .ca a.btn:hover{
+  background:#ffc900;
+  border: 2px solid #ffc900;
+  color: #222;
+}
+
+.personas-bio{
+  margin: 0;
+  padding: 2rem 0 2rem 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.personas-bio img{
+  margin-right: 2rem;
+  height: 100%;
+  border: 2px solid #ffc900;
+  border-radius: 100%;
+  box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.personas-bio ul {
+  padding: 0;
+}
+
+.personas p{
+  line-height: 150%;
+}
+
+.personas-bio-text, p.italicsquote{
+  color: #ffc900;
+}
+
+p.italicsquote{
+  font-style: italic;
+}
+
+.personas h2{
+  font-size: 2rem;
+}
+
+.personas h4 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.personas h3{
+  color: #ffc900;
+}
+
+/*-----------------------Comp-Analysis----------------------------------*/
+
+.ca{
+  background:#222;
+  color: #fff;
+}
+
+.ca-content{
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.ca ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+}
+
+div.ca-logos, div.ca-features{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-column: 3 / 4;
+  grid-row-start: 1;
+  margin: 0 auto;
+  padding:1rem 0;
+  text-align: center;
+}
+
+div.ca-features{
+  grid-column: 1 / 2;
+  grid-row-start: 2;
+  border-right: 1px solid #fff;
+  text-align: left;
+}
+
+div.ca-yesno{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-row-start: 1;
+  margin: 0 auto;
+  padding:1rem 0;
+  grid-row-start: 2;
+}
+
+div.ca-logos:nth-of-type(1){
+  grid-column: 2 / 3;
+}
+
+div.ca-logos:nth-of-type(3){
+  grid-column: 4 / 5;
+}
+
+img.ca-logos{
+  height: 90px;
+  width: auto;
+}
+
+/*-----------------------Information Architecture----------------------------------*/
+
+q{
+  font-style: italic;
+}
+
+img.wideimages{
+  width: 100vw;
+  padding-bottom: 2rem;
+}
+
+img.hidemob{
+  display: none;
+}
+
+/*-----------------------Visual Design & Brand Identity----------------------------------*/
+
+div.inlineimages, div.logo-construct, div.two-wideimages{
+  margin: 1rem auto;
+  padding: 1rem 0;
+  width: 50vw;
+  display: block;
+}
+
+div.logo-construct {
+  width: 80vw;
+}
+
+div.two-wideimages{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+}
+
+img.inlineimages, img.logo-construct{
+  max-width: 100%;
+}
+
+img.two-wideimages{
+  width: 100%;
+}
+
+.signature hr{
+  margin:2rem 0;
+  padding:0;
+  height: 3px;
+  width: 50%;
+  background-color: #222;
+  border:0;
+}
+
+.signature p, .signature h3 {
+  padding: .25rem 0;
+}
+/*-----------------------Media Queries----------------------------------*/
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 640px) {
+
+.intro{
+  vertical-align: middle;
+  margin:auto;
+}
+
+.intro img{
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.landing{
+  background:none;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+.navigation{
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+.intro h1{
+  padding: 5px 20px;
+  font-size: 3.2rem;                               
+ }
+
+.intro h3{
+  padding: 5px 20px;            
+  font-size: 20px;                            
+}
+
+ .description ul {
+   flex-direction: column;
+ }
+ 
+ .description h4 {
+   font-size: 16px;
+ }
+
+ .description p {
+   font-size: 16px;
+ }
+
+ .summary, .challenge, .solution, .design-process, .conclusion, .personas{
+  margin: 0;
+  padding: 2rem 1.25rem;
+  width: 90vw;
+}
+
+.summary{
+  margin-top: 2rem;
+}
+
+.section-headings h1, .design-stage-headings h2, h3.design-stage-captions{
+  padding: .5rem 0;
+}
+.design-stage-headings h2{
+  font-size: 1.75rem;
+}
+
+h3.design-stage-captions{
+  font-size: 1.25rem;
+}
+
+.wrapper, .personas{
+  width: 85%;
+  margin: 1rem auto;
+  padding: 2rem 1rem;
+  border-radius:0.5rem;
+}
+
+.viewall{
+  margin:0;
+  padding:1rem;
+ justify-content: flex-start;
+ text-align: left;
+}
+
+.viewall a.btn{
+  margin:0;
+  width:30%;
+  text-align:center;
+}
+
+.specsheet{
+  display: flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:flex-start;
+}
+
+.specsheet-content ul, .personas ul, .ca ul{
+  padding: 0.5rem 1rem;
+}
+
+.specsheet-content, .surveys-content{
+  flex-direction:column;
+}
+
+.specsheet-content:nth-of-type(1) {
+  border:none;
+}
+
+.specsheet h2, .surveys-content h2{
+  padding:1rem;
+}
+
+.surveys-content{
+  width: 100%;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+.surveys-content ul{
+  padding: 0.5rem 1rem;
+  width: 50%;
+}
+
+.surveys-content ul:nth-of-type(1){
+  margin: 0;
+  width: 50%;
+}
+
+.personas-wrapper{
+  display: flex;
+  flex-direction:column;
+  margin: 0;
+  width:100%;
+}
+.personas-bio{
+  margin: 0;
+  padding: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.personas-bio-text ul{
+  padding:1rem 0;
+}
+
+.personas-content:nth-of-type(2){
+  display: none;
+}
+
+.ca-content{
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: none;
+  margin: 0;
+  padding: 1rem;
+  width: 90%;
+}
+div.ca-logos{
+  grid-column: 1;
+  margin: 0;
+  padding:0.5rem;
+  text-align: center;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+div.ca-logos:nth-of-type(3){
+  grid-column: 3 / 4;
+}
+
+img.ca-logos{
+  height:80px;
+  width:80px;
+}
+
+div.ca-yesno, div.ca-features{
+  display: none;
+}
+
+img.hideweb{
+  display: none;
+}
+
+img.hidemob{
+  display: block;
+}
+
+img.wideimages{
+  padding-bottom:1rem;
+}
+
+div.two-wideimages{
+  grid-template-columns: 1fr;
+}
+
+div.inlineimages{
+  width: 80vw;
+}
+
+}
+ 
+ 
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 640px) and (max-width: 768px) {
+ 
+
+ .cheddr-hero{
+	min-height:125vw;
+}
+
+
+  .intro h1{
+  padding: 5px 20px;
+  font-size: 2.4rem;                               
+  }
+
+  .intro h3{
+  max-width:250px;
+  padding: 5px 24px;            
+  font-size: 16px;                            
+  }
+
+ .description ul {
+   margin-top:30vw;
+ }
+ 
+  .description h4 {
+   font-size: 16px;
+ }
+
+ .description p {
+   font-size: 16px;
+ }
+.summary, .challenge, .solution, .design-process, .conclusion, .personas{
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 60%;
+}
+
+.summary{
+  margin-top: 2rem;
+}
+
+.section-headings h1, .design-stage-headings h2, h3.design-stage-captions{
+  padding: .5rem 0;
+}
+.design-stage-headings h2{
+  font-size: 1.75rem;
+}
+
+h3.design-stage-captions{
+  font-size: 1.25rem;
+}
+
+.wrapper, .personas{
+  width: 85%;
+  margin: 1rem auto;
+  padding: 2rem 1rem;
+  border-radius:0.5rem;
+}
+
+.personas-wrapper{
+  width: 100%;
+}
+.personas-bio img{
+  margin-bottom: 1rem;
+}
+div.two-wideimages{
+  grid-template-columns: 1fr;
+}
+
+div.inlineimages{
+  width: 60vw;
+}
+
+} 
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .cheddr-hero{
+	min-height:130vw;
+}
+
+  .intro h1{
+  padding: 5px 20px;
+  font-size: 2.8rem;                               
+  }
+
+  .intro h3{
+   max-width:280px;
+   padding: 5px 20px;            
+   font-size: 18px;                            
+  }
+
+ .description ul {
+   margin-top:36vw;
+ }
+ 
+  .description h4 {
+   font-size: 16px;
+ }
+
+ .description p {
+   font-size: 16px;
+ }
+
+ .summary, .challenge, .solution, .design-process, .conclusion, .personas{
+  margin: 0 auto;
+  padding: 2rem 0;
+  width: 60%;
+}
+
+.summary{
+  margin-top: 2rem;
+}
+
+.section-headings h1, .design-stage-headings h2, h3.design-stage-captions{
+  padding: .5rem 0;
+}
+.design-stage-headings h2{
+  font-size: 1.75rem;
+}
+
+h3.design-stage-captions{
+  font-size: 1.25rem;
+}
+
+.wrapper, .personas{
+  width: 85%;
+  margin: 1rem auto;
+  padding: 2rem 1rem;
+  border-radius:0.5rem;
+}
+
+.personas-wrapper{
+  width: 100%;
+}
+
+.personas-bio{
+  flex-direction: column;
+  align-items: flex-start;
+}
+.personas-bio img{
+  margin-bottom: 1rem;
+}
+div.two-wideimages{
+  grid-template-columns: 1fr;
+}
+
+div.inlineimages{
+  width: 60vw;
+}
+		
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+ 
+ .cheddr-hero{
+	min-height:130vw;
+}
+
+
+  .intro h1{
+  margin-top:20px;
+  padding: 5px 20px;
+  font-size: 4rem;                               
+  }
+
+  .intro h3{
+  max-width:400px;
+  padding: 5px 20px;            
+  font-size: 1.5rem;                            
+  }
+
+ .description ul li {
+ 	min-width:200px;
+ }
+
+ .description ul {
+ 	margin-bottom:20px;
+   margin-top:36vw;
+ }
+
+  .description h4 {
+   font-size: 24px;
+ }
+
+ .description p {
+   font-size: 24px;
+ }
+
+  .wrapper, .personas{
+  width: 80%;
+  margin: 1rem auto;
+  padding: 2rem 1rem;
+  border-radius:0.5rem;
+}
+ .personas-bio{
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.personas-bio img{
+  margin-bottom: 1rem;
+}
+ 
+} 
+ 
