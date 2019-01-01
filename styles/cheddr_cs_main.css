@@ -363,7 +363,7 @@ p.section-content {
 
 .personas-bio img{
   margin-right: 2rem;
-  height: 100%;
+  max-width: 100%;
   border: 2px solid #ffc900;
   border-radius: 100%;
   box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.5);
