@@ -27,15 +27,28 @@ $('[data-fancybox="ca-gallery"]').fancybox({
   }
 });
 
-$('[data-fancybox]').fancybox({
-  toolbar  : false,
-  smallBtn : true,
-  iframe : {
-    preload : false
+// $('[data-fancybox]').fancybox({
+//   toolbar  : false,
+//   smallBtn : true,
+//   iframe : {
+//     preload : false
+//   }
+// });
+
+$('[data-fancybox="Uiflow-gallery"]').fancybox({
+  buttons : [ 
+    'slideShow',
+    'zoom',
+    'fullScreen',
+    'close',
+    'thumbs'
+  ],
+  thumbs : {
+    autoStart : false
   }
 });
 
-$('[data-fancybox="Uiflow-gallery"]').fancybox({
+$('[data-fancybox="wireframe-gallery"]').fancybox({
   buttons : [ 
     'slideShow',
     'zoom',

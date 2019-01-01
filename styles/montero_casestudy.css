@@ -126,7 +126,6 @@ a.btn{
 .design-stage ul, .design-stage ul li, .leftside ul, .leftside ul li{
   margin: 0;
   padding: 0.5rem 0;
-  font-size: 14px;
   line-height: 150%;
   list-style-type: disc;
 }
@@ -176,7 +175,6 @@ h3.design-stage-captions{
 }
 
 p.section-content {
-  font-size: 14px;
   margin: 0;
   padding: 1rem 0;
   line-height: 180%;
@@ -282,12 +280,16 @@ img.hidemob{
   grid-row-start: 2;
 }
 
-.specsheet h2, .surveys h2{
+.specsheet h2, .surveys h2, .surveys h5{
   font-size: 1.5rem;
   font-weight: 700;
   margin: 0;
   padding:0.5rem 2rem;
   grid-column: 1 / 2;
+}
+
+.surveys h5{
+  font-size: 12px;
 }
 
 .specsheet h2:nth-of-type(2){
@@ -533,15 +535,15 @@ img.ca-logos{
 .userstory-content ul{
   display:grid;
   grid-template-rows: auto repeat(6, 1fr);
-  }
+}
 
-  .userstory-content ul li{
+.userstory-content ul:first-of-type li{
   list-style-type: disc;
-  }
+}
 
-  .userstory-content ul li:nth-of-type(1){
+.userstory-content ul li:nth-of-type(1){
   list-style-type: none;
-  }
+}
 
 
 /*-----------------------Moodboards----------------------------------*/
@@ -782,7 +784,7 @@ a.process-content:last-of-type:hover {
   border:none;
 }
 
-.specsheet h2, .surveys h2{
+.specsheet h2, .surveys h2, .surveys h5{
   padding:1rem;
 }
 
@@ -1073,7 +1075,7 @@ a.process-content:last-of-type:hover {
   justify-content:flex-start;
 }*/
 
-.specsheet h2, .surveys h2{
+.specsheet h2, .surveys h2, .surveys h5{
   padding:1rem;
 }
 
