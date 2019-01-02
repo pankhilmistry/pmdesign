@@ -250,15 +250,23 @@ p.journey-text {
   padding: 1rem 0;
 }
 
+#logo-animation{
+  width: 85vw;
+}
+
 #lastsection {
   width: 85vw;
-  margin: 1rem 0;
+  margin: 1rem 0 4rem;
   padding: 1rem 1.25rem 1rem;
 }
 
-#lastsection h2, #lastsection h3, #lastsection h1 {
+#lastsection h2, #lastsection h3, #lastsection h1, #lastsection h5{
   font-size: 1.5rem;
   text-align: left;
+}
+
+#lastsection h5{
+  padding-top: 1rem;
 }
 
 #lastsection ul {
@@ -290,7 +298,7 @@ ul.socialmedia li a{
 
 form {
   width: 100%;
-  margin: 2.5rem 0;
+  margin: 4rem 0;
 }
 
 .contactform input, .contactform textarea{
@@ -304,7 +312,7 @@ form {
 
 div.contactform:last-of-type {
   width: 100%;
-  margin: 1rem 0;
+  margin: 1rem 0 1.5rem;
   justify-content: flex-start;
 }
 
@@ -504,13 +512,22 @@ strong.journey-text {
   padding: 1rem 0;
 }
 
-#lastsection {
+/*#lastsection {
   margin: 2rem auto;
+}*/
+
+#logo-animation{
+  width: 50vw;
 }
 
-#lastsection h2, #lastsection h1 {
+#lastsection h2, #lastsection h1, #lastsection h5{
   font-size: 1.5rem;
 }
+
+#lastsection h5{
+  padding-top: 1rem;
+}
+
 
 #lastsection ul {
   width: 50%;
@@ -533,7 +550,7 @@ form {
   width:60vw;
 }
 div.contactform:last-of-type {
-  margin: 1rem auto;
+  margin: 1rem auto 1.5rem;
   width: 100%;
 }
 
@@ -715,13 +732,22 @@ strong.journey-text {
   padding: 1rem 0;
 }
 
-#lastsection {
+/*#lastsection {
   margin: 2rem auto;
+}*/
+
+#logo-animation{
+  width: 50vw;
 }
 
-#lastsection h2, #lastsection h1 {
+#lastsection h2, #lastsection h1, #lastsection h5 {
   font-size: 1.5rem;
 }
+
+#lastsection h5{
+  padding-top: 1rem;
+}
+
 
 #lastsection ul {
   width: 50%;
