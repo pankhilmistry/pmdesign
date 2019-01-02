@@ -26,6 +26,10 @@ section.backdrop {
   margin-bottom: 5rem;
 }
 
+.monteroyellow {
+  background: linear-gradient(180deg, #F6EB84 0%, #F4BB3A 100%);
+}
+
 div.hero {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
