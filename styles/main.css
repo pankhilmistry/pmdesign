@@ -772,9 +772,13 @@ img.logo-animation{
 }
 
 #lastsection ul {
-	margin: 2rem auto;
+	margin: 1rem auto;
 	padding: 0;
 	width: 30%;
+}
+
+#lastsection ul li{
+	padding: 1rem 0;
 }
 
 #lastsection h3{

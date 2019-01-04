@@ -85,13 +85,19 @@ header nav, header.heroyellow nav{
 }
 
 #hero ul li{
-  width: 65%;
+  width: 70%;
   margin: 0;
   padding: 1rem 0;
 }
 
 #hero ul li:nth-of-type(1){
   width: 90%;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:90vw;
+  }
 }
 
 .btn-yellow, .btn-black, .btn-dash {
@@ -270,7 +276,7 @@ p.journey-text {
 }
 
 #lastsection ul {
-  margin: 2rem 0;
+  margin: 1rem 0;
   padding: 0;
   width: 90%;
 }
@@ -292,7 +298,8 @@ p.journey-text {
 }
 
 ul.socialmedia li a{
-  padding: 0 2rem 0 0;
+  margin: 0 2rem 0 0;
+  padding: 0;
  }
 
 
