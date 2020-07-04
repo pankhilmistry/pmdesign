@@ -886,6 +886,7 @@ div.contactform:last-of-type {
 }
 
  .contactform button{
+	font-family: "Montserrat", sans-serif;
  	border: 0;
  	font-weight: 500;
  	width: 80%;
