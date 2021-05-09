@@ -854,6 +854,7 @@ form {
   line-height: 120%;
   font-weight: 600;
   width:54vw;
+  font-family: "Montserrat", sans-serif;
 }
 
  .contactform textarea{
@@ -864,13 +865,17 @@ form {
 
  .contactform input::placeholder, .contactform textarea::placeholder {
  	color: #bebebe;
- 	font-weight: 500;
+ 	font-weight: 400;
+	font-family: "Montserrat", sans-serif;
+	line-height: 1.3;
  }
 
  .contactform input::-moz-placeholder, .contactform textarea::-moz-placeholder{
   opacity: 1;
   color: #bebebe;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.3;
 }
 
 .contactform input:focus, .contactform textarea:focus{
@@ -885,10 +890,10 @@ div.contactform:last-of-type {
  	justify-content: center;
 }
 
- .contactform button{
+ .contactform button {
 	font-family: "Montserrat", sans-serif;
  	border: 0;
- 	font-weight: 500;
+ 	font-weight: 600;
  	width: 80%;
  }
 
